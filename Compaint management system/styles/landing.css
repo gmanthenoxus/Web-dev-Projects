@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.content-holder{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background:url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_Nile_University_Vert_-01.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    background-color: black;
+    opacity: 90%;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .content h4{
+    color: whitesmoke;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+}
+.banner .content h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    z-index: 3;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+
+
+.landing-btn{
+    z-index: 2;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: crimson;
+    margin-right: 10px;
+    transition: opacity .4s ease;
+}
+
+.landing-btn:hover{
+    opacity: .6;
+}
